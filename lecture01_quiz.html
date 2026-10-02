@@ -1457,15 +1457,6 @@ body {
 <span class="colab-arrow">→ 視聴</span>
 </a>
 </div>
-<div class="section">
-<div class="sec-label"><span class="s-num">🔗</span>演習で使う</div>
-<a class="colab-card" href="https://colab.research.google.com/" target="_blank">
-<span class="colab-icon">📓</span>
-<div><div class="colab-title">Google Colab</div>
-<div class="colab-desc">演習で使うノート lecture01_ml_map.ipynb を開く（無ければ新規作成して名前を付ける）</div></div>
-<span class="colab-arrow">→ 開く</span>
-</a>
-</div>
 <div class="todo-box" id="todo-s1">
 <div class="todo-title">📝 このトピックでノートブック（.ipynb）に書くこと（lecture01_ml_map.ipynb）</div>
 <ul>
@@ -1475,75 +1466,53 @@ body {
 <div class="todo-note">チェックはこのブラウザにだけ残ります（提出はノートブックで）。</div>
 </div>
 <div class="section">
-<div class="sec-label"><span class="s-num">①</span>確認クイズ（全6問正解で トピック2 解放）</div>
+<div class="sec-label"><span class="s-num">①</span>確認クイズ（全4問正解で トピック2 解放）</div>
 
 <div class="quiz-card" id="qc-s1-1">
-<div class="quiz-q"><span class="quiz-qnum">Q1</span>動画の「13 回の地図」で、この秋の到達点として示されたものはどれですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q1</span>手元の 7 つの点に「全部の点を通る曲線」と「素直な直線」を当てはめ、星印の新しい点を 1 つ足しました。動画の図で起きたことはどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="春に手に入れた道具（Colab・pd.read_csv・散布図）は、今回は機械に学習させる側に回して使います。文法の学び直しが到達点ではありません。" onclick="checkQuiz(this,false,'exp-s1-1','s1')"><span class="opt-badge">A</span>春の科目の Python の文法を、最初から学び直す</div>
-<div class="quiz-opt" data-wrong="到達点は使い方ではなく中身です。AI チャットの中身を、秋に 1 つずつ積み上げる技術として学びます。" onclick="checkQuiz(this,false,'exp-s1-1','s1')"><span class="opt-badge">B</span>AI チャットの上手な使い方を、13 回かけて練習する</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-1','s1')"><span class="opt-badge">C</span>毎日使う AI チャットの中身は、この秋に学ぶ技術だ</div>
-<div class="quiz-opt" data-wrong="地図は 4 つの部に分かれ、道具 → 回帰 → 学習する機械 → 言葉と進みます。同じ手法を使い続けるのではありません。" onclick="checkQuiz(this,false,'exp-s1-1','s1')"><span class="opt-badge">D</span>13 回とも同じ手法を使い続けて、手に慣らす</div>
+<div class="quiz-opt" data-wrong="逆です。素直な直線は新しい点の近くを通り、全部の点を通る曲線のほうが大きく外れました。" onclick="checkQuiz(this,false,'exp-s1-1','s1')"><span class="opt-badge">A</span>素直な直線のほうが、新しい点から大きく外れた</div>
+<div class="quiz-opt" data-wrong="手元の 7 点で誤差ゼロでも、新しい点で当たるとは限りません。図では、うねった曲線が新しい点から大きく外れました。" onclick="checkQuiz(this,false,'exp-s1-1','s1')"><span class="opt-badge">B</span>曲線は手元で誤差ゼロなので、新しい点にもぴったり当たった</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-1','s1')"><span class="opt-badge">C</span>曲線は新しい点から大きく外れ、直線は新しい点の近くを通った</div>
+<div class="quiz-opt" data-wrong="外れ方に差がありました。新しい点で測るなら、直線のほうが良い線です。" onclick="checkQuiz(this,false,'exp-s1-1','s1')"><span class="opt-badge">D</span>どちらの線も同じくらい外れたので、良し悪しは決められない</div>
 </div>
-<div class="quiz-exp" id="exp-s1-1"><strong>正解: C</strong><br/>図の下の到達点は「毎日使う AI チャットの中身は、この秋に学ぶ技術」でした。13 回は 4 つの部（道具 → 回帰で機械学習の芯を掴む → 学習する機械 → 言葉）に分かれ、AI チャットの中身を 1 つずつ積み上げます。</div>
+<div class="quiz-exp" id="exp-s1-1"><strong>正解: C</strong><br/>手元の 7 点だけを見れば、曲線は誤差ゼロで完璧です。でも点と点のあいだでうねっていて、星印の新しい点からは大きく外れました。手元への当てはまりだけでは、良し悪しは決められません。全部の点を通る曲線は、過去問を丸暗記した学生と同じです。</div>
 </div>
 
 <div class="quiz-card" id="qc-s1-2">
-<div class="quiz-q"><span class="quiz-qnum">Q2</span>手元の 7 つの点に「全部の点を通る曲線」と「素直な直線」を当てはめ、星印の新しい点を 1 つ足しました。動画の図で起きたことはどれですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q2</span>動画で名前をつけた「過学習」の意味はどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-2','s1')"><span class="opt-badge">A</span>曲線は新しい点から大きく外れ、直線は新しい点の近くを通った</div>
-<div class="quiz-opt" data-wrong="手元の 7 点で誤差ゼロでも、新しい点で当たるとは限りません。図では、うねった曲線が新しい点から大きく外れました。" onclick="checkQuiz(this,false,'exp-s1-2','s1')"><span class="opt-badge">B</span>曲線は手元で誤差ゼロなので、新しい点にもぴったり当たった</div>
-<div class="quiz-opt" data-wrong="逆です。素直な直線は新しい点の近くを通り、全部の点を通る曲線のほうが大きく外れました。" onclick="checkQuiz(this,false,'exp-s1-2','s1')"><span class="opt-badge">C</span>素直な直線のほうが、新しい点から大きく外れた</div>
-<div class="quiz-opt" data-wrong="外れ方に差がありました。新しい点で測るなら、直線のほうが良い線です。" onclick="checkQuiz(this,false,'exp-s1-2','s1')"><span class="opt-badge">D</span>どちらの線も同じくらい外れたので、良し悪しは決められない</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-2','s1')"><span class="opt-badge">A</span>訓練データを覚えてしまい、未知のデータで外すこと</div>
+<div class="quiz-opt" data-wrong="それは汎化です。過学習が「覚える」、汎化が「学ぶ」でした。" onclick="checkQuiz(this,false,'exp-s1-2','s1')"><span class="opt-badge">B</span>未知のデータにも通用すること</div>
+<div class="quiz-opt" data-wrong="線は引けています。過学習は、手元の訓練データに合いすぎて、まだ見ていないデータで外すことです。" onclick="checkQuiz(this,false,'exp-s1-2','s1')"><span class="opt-badge">C</span>訓練データが少なすぎて、線が 1 本も引けないこと</div>
+<div class="quiz-opt" data-wrong="それは未知への性能の測り方（Q&amp;A の Q4）です。過学習そのものの意味ではありません。" onclick="checkQuiz(this,false,'exp-s1-2','s1')"><span class="opt-badge">D</span>手元のデータの一部を隠して、性能を測ること</div>
 </div>
-<div class="quiz-exp" id="exp-s1-2"><strong>正解: A</strong><br/>手元の 7 点だけを見れば、曲線は誤差ゼロで完璧です。でも点と点のあいだでうねっていて、星印の新しい点からは大きく外れました。手元への当てはまりだけでは、良し悪しは決められません。全部の点を通る曲線は、過去問を丸暗記した学生と同じです。</div>
+<div class="quiz-exp" id="exp-s1-2"><strong>正解: A</strong><br/>訓練データは手元にあるデータ（さっきの 7 つの点）、未知のデータはまだ見ていないデータ（新しい点）。過学習は訓練データを覚えてしまい未知で外すこと、汎化は未知のデータにも通用することです。過学習が「覚える」、汎化が「学ぶ」。良さは手元の当てはまりではなく、未知への性能で決まります。</div>
 </div>
 
 <div class="quiz-card" id="qc-s1-3">
-<div class="quiz-q"><span class="quiz-qnum">Q3</span>動画で名前をつけた「過学習」の意味はどれですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q3</span>コードでエラーが出て生成 AI に聞くとき、動画の「3 行の型」の 2 行目（何が出た）に書くものはどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="それは未知への性能の測り方（Q&amp;A の Q4）です。過学習そのものの意味ではありません。" onclick="checkQuiz(this,false,'exp-s1-3','s1')"><span class="opt-badge">A</span>手元のデータの一部を隠して、性能を測ること</div>
-<div class="quiz-opt" data-wrong="それは汎化です。過学習が「覚える」、汎化が「学ぶ」でした。" onclick="checkQuiz(this,false,'exp-s1-3','s1')"><span class="opt-badge">B</span>未知のデータにも通用すること</div>
-<div class="quiz-opt" data-wrong="線は引けています。過学習は、手元の訓練データに合いすぎて、まだ見ていないデータで外すことです。" onclick="checkQuiz(this,false,'exp-s1-3','s1')"><span class="opt-badge">C</span>訓練データが少なすぎて、線が 1 本も引けないこと</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-3','s1')"><span class="opt-badge">D</span>訓練データを覚えてしまい、未知のデータで外すこと</div>
+<div class="quiz-opt" data-wrong="目的は 3 行目です。1 行目が何をしたら、2 行目が何が出た、3 行目が何をしたい、の順でした。" onclick="checkQuiz(this,false,'exp-s1-3','s1')"><span class="opt-badge">A</span>最後にやりたいこと（目的）を書く</div>
+<div class="quiz-opt" data-wrong="最後のところだけでは足りません。上から下まで、途中も省略せずに全部貼ります。" onclick="checkQuiz(this,false,'exp-s1-3','s1')"><span class="opt-badge">B</span>エラーのいちばん最後の 1 行だけを貼る</div>
+<div class="quiz-opt" data-wrong="それでは答えようがありません。何が出たかは、エラーの全文で伝えます。" onclick="checkQuiz(this,false,'exp-s1-3','s1')"><span class="opt-badge">C</span>「エラーが出ました」という一言だけを書く</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-3','s1')"><span class="opt-badge">D</span>エラーの全文を、途中も省略せずに貼る</div>
 </div>
-<div class="quiz-exp" id="exp-s1-3"><strong>正解: D</strong><br/>訓練データは手元にあるデータ（さっきの 7 つの点）、未知のデータはまだ見ていないデータ（新しい点）。過学習は訓練データを覚えてしまい未知で外すこと、汎化は未知のデータにも通用することです。過学習が「覚える」、汎化が「学ぶ」。良さは手元の当てはまりではなく、未知への性能で決まります。</div>
+<div class="quiz-exp" id="exp-s1-3"><strong>正解: D</strong><br/>3 行の型は ①何をしたら ②何が出た（エラーは全文を貼る）③何をしたい。もう 1 つの決まりは、貼る前に自分で 1 回読むこと。分からなくても、読んでおくと返事のどこが大事か分かるようになります。</div>
 </div>
 
 <div class="quiz-card" id="qc-s1-4">
-<div class="quiz-q"><span class="quiz-qnum">Q4</span>動画の「生成 AI の基本」の説明に合うものはどれですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q4</span>授業中に手を動かすハンズオンは、動画の「3 つのゾーン」のどれにあたりますか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="生成 AI は答えを新しく作り出します。ふつうの文章で頼むと、文章やコードで返ってきます。" onclick="checkQuiz(this,false,'exp-s1-4','s1')"><span class="opt-badge">A</span>決まった質問にだけ、あらかじめ用意された答えを返すプログラム</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-4','s1')"><span class="opt-badge">B</span>文章・コード・画像を新しく作り出す AI</div>
-<div class="quiz-opt" data-wrong="頼み方はふつうの文章で大丈夫、というのが動画の説明でした。" onclick="checkQuiz(this,false,'exp-s1-4','s1')"><span class="opt-badge">C</span>専用の命令文を覚えないと、使うことができない AI</div>
-<div class="quiz-opt" data-wrong="動画で挙げたサービス（Gemini・ChatGPT・Claude）は、どれも無料で使える枠があります。" onclick="checkQuiz(this,false,'exp-s1-4','s1')"><span class="opt-badge">D</span>有料の契約をしないと、授業では使えない AI</div>
+<div class="quiz-opt" data-wrong="自力ゾーンは、小テストや自分の言葉で説明する場面です。分かったかどうかは、AI が代わりに確かめられないからです。" onclick="checkQuiz(this,false,'exp-s1-4','s1')"><span class="opt-badge">A</span>自力ゾーン。AI は使わず、自分の頭だけで進める</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-4','s1')"><span class="opt-badge">B</span>相談ゾーン。AI に聞いてよいが、コードは自分で打って確かめる</div>
+<div class="quiz-opt" data-wrong="協働ゾーンは、発展課題やレポートの場面です。" onclick="checkQuiz(this,false,'exp-s1-4','s1')"><span class="opt-badge">C</span>協働ゾーン。AI をフルに使い、聞いた内容・判断・検証を記録する</div>
+<div class="quiz-opt" data-wrong="AI に頼ってよい深さは、場面ごとに決まっています。ハンズオンは真ん中の相談ゾーンです。" onclick="checkQuiz(this,false,'exp-s1-4','s1')"><span class="opt-badge">D</span>どのゾーンにも入らないので、使い方はその場で自由に決めてよい</div>
 </div>
-<div class="quiz-exp" id="exp-s1-4"><strong>正解: B</strong><br/>生成 AI＝文章・コード・画像を新しく作り出す AI。「Python で平均を出すには？」のようなふつうの文章で頼むと、文章やコードで答えが返ってきます。文章でやり取りする生成 AI の中身の技術の名前が LLM です。この授業では、詰まったら普段使いの生成 AI に聞きます。</div>
+<div class="quiz-exp" id="exp-s1-4"><strong>正解: B</strong><br/>自力ゾーン（AI なし・小テストや自分の言葉で説明）／相談ゾーン（AI に聞いてよい・コードは自分で打って検証・授業内のハンズオン）／協働ゾーン（AI フル活用・聞いた内容と判断と検証を記録・発展課題やレポート）。レポートには AI 利用記録の欄を書き、使わなければ「不使用」と書きます。</div>
 </div>
 
-<div class="quiz-card" id="qc-s1-5">
-<div class="quiz-q"><span class="quiz-qnum">Q5</span>コードでエラーが出て生成 AI に聞くとき、動画の「3 行の型」の 2 行目（何が出た）に書くものはどれですか。</div>
-<div class="quiz-opts">
-<div class="quiz-opt" data-wrong="それでは答えようがありません。何が出たかは、エラーの全文で伝えます。" onclick="checkQuiz(this,false,'exp-s1-5','s1')"><span class="opt-badge">A</span>「エラーが出ました」という一言だけを書く</div>
-<div class="quiz-opt" data-wrong="最後のところだけでは足りません。上から下まで、途中も省略せずに全部貼ります。" onclick="checkQuiz(this,false,'exp-s1-5','s1')"><span class="opt-badge">B</span>エラーのいちばん最後の 1 行だけを貼る</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-5','s1')"><span class="opt-badge">C</span>エラーの全文を、途中も省略せずに貼る</div>
-<div class="quiz-opt" data-wrong="目的は 3 行目です。1 行目が何をしたら、2 行目が何が出た、3 行目が何をしたい、の順でした。" onclick="checkQuiz(this,false,'exp-s1-5','s1')"><span class="opt-badge">D</span>最後にやりたいこと（目的）を書く</div>
-</div>
-<div class="quiz-exp" id="exp-s1-5"><strong>正解: C</strong><br/>3 行の型は ①何をしたら ②何が出た（エラーは全文を貼る）③何をしたい。もう 1 つの決まりは、貼る前に自分で 1 回読むこと。分からなくても、読んでおくと返事のどこが大事か分かるようになります。</div>
-</div>
-
-<div class="quiz-card" id="qc-s1-6">
-<div class="quiz-q"><span class="quiz-qnum">Q6</span>授業中に手を動かすハンズオンは、動画の「3 つのゾーン」のどれにあたりますか。</div>
-<div class="quiz-opts">
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s1-6','s1')"><span class="opt-badge">A</span>相談ゾーン。AI に聞いてよいが、コードは自分で打って確かめる</div>
-<div class="quiz-opt" data-wrong="自力ゾーンは、小テストや自分の言葉で説明する場面です。分かったかどうかは、AI が代わりに確かめられないからです。" onclick="checkQuiz(this,false,'exp-s1-6','s1')"><span class="opt-badge">B</span>自力ゾーン。AI は使わず、自分の頭だけで進める</div>
-<div class="quiz-opt" data-wrong="協働ゾーンは、発展課題やレポートの場面です。" onclick="checkQuiz(this,false,'exp-s1-6','s1')"><span class="opt-badge">C</span>協働ゾーン。AI をフルに使い、聞いた内容・判断・検証を記録する</div>
-<div class="quiz-opt" data-wrong="AI に頼ってよい深さは、場面ごとに決まっています。ハンズオンは真ん中の相談ゾーンです。" onclick="checkQuiz(this,false,'exp-s1-6','s1')"><span class="opt-badge">D</span>どのゾーンにも入らないので、使い方はその場で自由に決めてよい</div>
-</div>
-<div class="quiz-exp" id="exp-s1-6"><strong>正解: A</strong><br/>自力ゾーン（AI なし・小テストや自分の言葉で説明）／相談ゾーン（AI に聞いてよい・コードは自分で打って検証・授業内のハンズオン）／協働ゾーン（AI フル活用・聞いた内容と判断と検証を記録・発展課題やレポート）。レポートには AI 利用記録の欄を書き、使わなければ「不使用」と書きます。</div>
-</div>
-
-<div class="step-locked-gate" id="gate-s1">🔒 6問すべて正解すると トピック2 が解放されます。</div>
+<div class="step-locked-gate" id="gate-s1">🔒 4問すべて正解すると トピック2 が解放されます。</div>
 </div>
 </div>
 
@@ -1577,64 +1546,53 @@ body {
 <div class="todo-note">チェックはこのブラウザにだけ残ります（提出はノートブックで）。</div>
 </div>
 <div class="section">
-<div class="sec-label"><span class="s-num">①</span>確認クイズ（全5問正解で トピック3 解放）</div>
+<div class="sec-label"><span class="s-num">①</span>確認クイズ（全4問正解で トピック3 解放）</div>
 
 <div class="quiz-card" id="qc-s2-1">
 <div class="quiz-q"><span class="quiz-qnum">Q1</span>動画で示した、機械学習の一行定義はどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="ルールを人が書くのは、従来のプログラミングです。機械学習は、ルールを人が書かず、データから機械が見つけます。" onclick="checkQuiz(this,false,'exp-s2-1','s2')"><span class="opt-badge">A</span>人が書いたルールを、コンピュータに速く正確に実行させる技術</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-1','s2')"><span class="opt-badge">B</span>データから規則性を自動的に獲得し、未知のデータへの予測・判断を行う技術</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-1','s2')"><span class="opt-badge">A</span>データから規則性を自動的に獲得し、未知のデータへの予測・判断を行う技術</div>
+<div class="quiz-opt" data-wrong="ルールを人が書くのは、従来のプログラミングです。機械学習は、ルールを人が書かず、データから機械が見つけます。" onclick="checkQuiz(this,false,'exp-s2-1','s2')"><span class="opt-badge">B</span>人が書いたルールを、コンピュータに速く正確に実行させる技術</div>
 <div class="quiz-opt" data-wrong="手元のデータを覚えるだけなら、学んだとは言いません。定義の最後に「未知のデータへの予測・判断」が入っています。" onclick="checkQuiz(this,false,'exp-s2-1','s2')"><span class="opt-badge">C</span>手元のデータを誤差なく覚えて、聞かれたら同じ答えを返す技術</div>
 <div class="quiz-opt" data-wrong="定義の最初の語は「データから」です。データが無ければ規則は取り出せません（Q&amp;A の Q3）。" onclick="checkQuiz(this,false,'exp-s2-1','s2')"><span class="opt-badge">D</span>データを使わずに、AI が自分の力だけで答えを考え出す技術</div>
 </div>
-<div class="quiz-exp" id="exp-s2-1"><strong>正解: B</strong><br/>3 つに分けて読みます。「データから」＝ルールは人が書かず機械が見つける、「規則性」＝どんな指標の組み合わせのときに何が起きたか、「未知のデータへ」＝前のトピックの汎化。手元のデータを覚えるだけなら、学んだとは言いません。</div>
+<div class="quiz-exp" id="exp-s2-1"><strong>正解: A</strong><br/>3 つに分けて読みます。「データから」＝ルールは人が書かず機械が見つける、「規則性」＝どんな指標の組み合わせのときに何が起きたか、「未知のデータへ」＝前のトピックの汎化。手元のデータを覚えるだけなら、学んだとは言いません。</div>
 </div>
 
 <div class="quiz-card" id="qc-s2-2">
 <div class="quiz-q"><span class="quiz-qnum">Q2</span>「人がルールを書く／データから規則を学ぶ」の上下 2 段の図の読み方として、正しいものはどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="下の段では、データと答えの組を渡します。正解つきのデータを見せて、そのあいだにある規則を機械が探します。" onclick="checkQuiz(this,false,'exp-s2-2','s2')"><span class="opt-badge">A</span>機械学習の段では、答え（正解）は機械に渡さずに学ばせる</div>
+<div class="quiz-opt" data-wrong="下の段（機械学習）では、人はデータと答えの組を渡すだけで、規則は機械が見つけます。" onclick="checkQuiz(this,false,'exp-s2-2','s2')"><span class="opt-badge">A</span>どちらの段でも、ルールや規則を書いているのは人のほう</div>
 <div class="quiz-opt" data-wrong="逆です。上の段では人がルールを書いて渡し、下の段では機械が規則を見つけて出します。" onclick="checkQuiz(this,false,'exp-s2-2','s2')"><span class="opt-badge">B</span>ルールは機械が見つける出力、規則は人が書く入力で、立場が逆</div>
-<div class="quiz-opt" data-wrong="下の段（機械学習）では、人はデータと答えの組を渡すだけで、規則は機械が見つけます。" onclick="checkQuiz(this,false,'exp-s2-2','s2')"><span class="opt-badge">C</span>どちらの段でも、ルールや規則を書いているのは人のほう</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-2','s2')"><span class="opt-badge">D</span>ルールは人が書く入力、規則は機械が見つける出力で、立場が逆</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-2','s2')"><span class="opt-badge">C</span>ルールは人が書く入力、規則は機械が見つける出力で、立場が逆</div>
+<div class="quiz-opt" data-wrong="下の段では、データと答えの組を渡します。正解つきのデータを見せて、そのあいだにある規則を機械が探します。" onclick="checkQuiz(this,false,'exp-s2-2','s2')"><span class="opt-badge">D</span>機械学習の段では、答え（正解）は機械に渡さずに学ばせる</div>
 </div>
-<div class="quiz-exp" id="exp-s2-2"><strong>正解: D</strong><br/>上の段は従来のプログラミング（人が if-then のルールを書き、ルールが答えを出す）。下の段は機械学習（データと答えの組を渡すと、機械が規則を見つけ、未知のデータへの予測を出す）。ルールと規則の立場が逆です。ここが定義の「データから」です。</div>
+<div class="quiz-exp" id="exp-s2-2"><strong>正解: C</strong><br/>上の段は従来のプログラミング（人が if-then のルールを書き、ルールが答えを出す）。下の段は機械学習（データと答えの組を渡すと、機械が規則を見つけ、未知のデータへの予測を出す）。ルールと規則の立場が逆です。ここが定義の「データから」です。</div>
 </div>
 
 <div class="quiz-card" id="qc-s2-3">
 <div class="quiz-q"><span class="quiz-qnum">Q3</span>機械に学ばせる理由は 3 つありました。「働き方や物価の動きが以前と変わると、ルールが外れる」はどれにあたりますか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-3','s2')"><span class="opt-badge">A</span>古びる</div>
-<div class="quiz-opt" data-wrong="「言葉にできない」は、何が効くのかを専門家も全部は言えない、という理由です。" onclick="checkQuiz(this,false,'exp-s2-3','s2')"><span class="opt-badge">B</span>言葉にできない</div>
+<div class="quiz-opt" data-wrong="「言葉にできない」は、何が効くのかを専門家も全部は言えない、という理由です。" onclick="checkQuiz(this,false,'exp-s2-3','s2')"><span class="opt-badge">A</span>言葉にできない</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-3','s2')"><span class="opt-badge">B</span>古びる</div>
 <div class="quiz-opt" data-wrong="「多すぎる」は、要因の組み合わせが爆発して書けない、という理由です。" onclick="checkQuiz(this,false,'exp-s2-3','s2')"><span class="opt-badge">C</span>多すぎる</div>
 <div class="quiz-opt" data-wrong="データが無いのは、学ばせる理由ではなく、学べない場合です（Q&amp;A の Q3）。" onclick="checkQuiz(this,false,'exp-s2-3','s2')"><span class="opt-badge">D</span>データが無い</div>
 </div>
-<div class="quiz-exp" id="exp-s2-3"><strong>正解: A</strong><br/>3 つの理由は、言葉にできない（何が効くかを専門家も全部は言えない）・古びる（構造が変わるとルールが外れる）・多すぎる（要因の組み合わせが爆発して書けない）。だから、データから規則を取り出す道具が要ります。人の直観を補う道具です。</div>
+<div class="quiz-exp" id="exp-s2-3"><strong>正解: B</strong><br/>3 つの理由は、言葉にできない（何が効くかを専門家も全部は言えない）・古びる（構造が変わるとルールが外れる）・多すぎる（要因の組み合わせが爆発して書けない）。だから、データから規則を取り出す道具が要ります。人の直観を補う道具です。</div>
 </div>
 
 <div class="quiz-card" id="qc-s2-4">
-<div class="quiz-q"><span class="quiz-qnum">Q4</span>動画の年表（3 つのブームと 2 つの冬）で、いま私たちがいるのはどこですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q4</span>動画の考え方に当てはめると、機械学習を使わずに、人がルールを書けば足りるのはどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="第 2 の冬は、2012 年の深層学習の飛躍で終わりました。いまはその後のブームの中です。" onclick="checkQuiz(this,false,'exp-s2-4','s2')"><span class="opt-badge">A</span>深層学習の飛躍の前で研究が停滞している、第 2 の冬の中</div>
-<div class="quiz-opt" data-wrong="第 1 のブームは、1969 年の限界の指摘で冬に入りました。" onclick="checkQuiz(this,false,'exp-s2-4','s2')"><span class="opt-badge">B</span>1958 年のパーセプトロンから始まった、第 1 のブームの中</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-4','s2')"><span class="opt-badge">C</span>2012 年の深層学習の飛躍から始まった、第 3 のブームの中</div>
-<div class="quiz-opt" data-wrong="年表の冬は 2 つです。いまの AI チャット（LLM・生成 AI）は、第 3 のブームの系譜の先端にあります。" onclick="checkQuiz(this,false,'exp-s2-4','s2')"><span class="opt-badge">D</span>ブームはもう終わり、第 3 の冬に入ったところ</div>
+<div class="quiz-opt" data-wrong="来月の売上の予測は、データから規則を学んで、まだ来ていない月に答える問題です。" onclick="checkQuiz(this,false,'exp-s2-4','s2')"><span class="opt-badge">A</span>過去の数字から、来月の売上を予測する</div>
+<div class="quiz-opt" data-wrong="迷惑メールは文面が次々と変わり、ルールを書いてもすぐ古びます。だから例を集めて機械に学ばせます（たしかめの ②）。" onclick="checkQuiz(this,false,'exp-s2-4','s2')"><span class="opt-badge">B</span>過去のメールの例から、迷惑メールを自動で見分ける</div>
+<div class="quiz-opt" data-wrong="来月の電力需要は、例から規則を学ぶ問題です（たしかめの ③）。" onclick="checkQuiz(this,false,'exp-s2-4','s2')"><span class="opt-badge">C</span>過去の記録から、来月の電力需要を予測する</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-4','s2')"><span class="opt-badge">D</span>時給と働いた時間から、今月のバイト代を計算する</div>
 </div>
-<div class="quiz-exp" id="exp-s2-4"><strong>正解: C</strong><br/>冬とは、学習する機械への期待が外れ、研究が停滞した時期です。1958 年のパーセプトロン（第 1 のブーム）→ 1969 年の限界の指摘（第 1 の冬）→ 1986 年の誤差逆伝播の普及（第 2 のブーム）→ 1995 年ごろからネットは第 2 の冬へ → 2012 年の深層学習の飛躍（第 3 のブーム）。2017 年の Transformer、2022 年の LLM・生成 AI も、このブームの中にあります。</div>
+<div class="quiz-exp" id="exp-s2-4"><strong>正解: D</strong><br/>Q&A の Q2 のとおり、言葉にできるならルールでよいのです。消費税の計算と同じく、バイト代は「時給 × 働いた時間」というルールで書けるので、学習は要りません。ほかの 3 つは、例から規則を学ぶ問題です。</div>
 </div>
 
-<div class="quiz-card" id="qc-s2-5">
-<div class="quiz-q"><span class="quiz-qnum">Q5</span>動画の考え方に当てはめると、機械学習を使わずに、人がルールを書けば足りるのはどれですか。</div>
-<div class="quiz-opts">
-<div class="quiz-opt" data-wrong="来月の売上の予測は、データから規則を学んで、まだ来ていない月に答える問題です。" onclick="checkQuiz(this,false,'exp-s2-5','s2')"><span class="opt-badge">A</span>過去の数字から、来月の売上を予測する</div>
-<div class="quiz-opt" data-wrong="迷惑メールは文面が次々と変わり、ルールを書いてもすぐ古びます。だから例を集めて機械に学ばせます（たしかめの ②）。" onclick="checkQuiz(this,false,'exp-s2-5','s2')"><span class="opt-badge">B</span>過去のメールの例から、迷惑メールを自動で見分ける</div>
-<div class="quiz-opt" data-wrong="来月の電力需要は、例から規則を学ぶ問題です（たしかめの ③）。" onclick="checkQuiz(this,false,'exp-s2-5','s2')"><span class="opt-badge">C</span>過去の記録から、来月の電力需要を予測する</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s2-5','s2')"><span class="opt-badge">D</span>時給と働いた時間から、今月のバイト代を計算する</div>
-</div>
-<div class="quiz-exp" id="exp-s2-5"><strong>正解: D</strong><br/>Q&A の Q2 のとおり、言葉にできるならルールでよいのです。消費税の計算と同じく、バイト代は「時給 × 働いた時間」というルールで書けるので、学習は要りません。ほかの 3 つは、例から規則を学ぶ問題です。</div>
-</div>
-
-<div class="step-locked-gate" id="gate-s2">🔒 5問すべて正解すると トピック3 が解放されます。</div>
+<div class="step-locked-gate" id="gate-s2">🔒 4問すべて正解すると トピック3 が解放されます。</div>
 </div>
 </div>
 
@@ -1668,64 +1626,53 @@ body {
 <div class="todo-note">チェックはこのブラウザにだけ残ります（提出はノートブックで）。</div>
 </div>
 <div class="section">
-<div class="sec-label"><span class="s-num">①</span>確認クイズ（全5問正解で トピック4 解放）</div>
+<div class="sec-label"><span class="s-num">①</span>確認クイズ（全4問正解で トピック4 解放）</div>
 
 <div class="quiz-card" id="qc-s3-1">
 <div class="quiz-q"><span class="quiz-qnum">Q1</span>「教師あり学習」の「教師」とは、何のことですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="教師とは、データについている正解のことです。" onclick="checkQuiz(this,false,'exp-s3-1','s3')"><span class="opt-badge">A</span>教科書に書かれている、手法の説明</div>
-<div class="quiz-opt" data-wrong="言葉が「教師」なのでそう読めますが、ここでの教師は人ではありません（Q&amp;A の Q3）。" onclick="checkQuiz(this,false,'exp-s3-1','s3')"><span class="opt-badge">B</span>横について教えてくれる先生</div>
+<div class="quiz-opt" data-wrong="言葉が「教師」なのでそう読めますが、ここでの教師は人ではありません（Q&amp;A の Q3）。" onclick="checkQuiz(this,false,'exp-s3-1','s3')"><span class="opt-badge">A</span>横について教えてくれる先生</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-1','s3')"><span class="opt-badge">B</span>例に付いている正解（正解データ）</div>
 <div class="quiz-opt" data-wrong="行動と報酬で学ぶのは強化学習で、この授業では扱いません。" onclick="checkQuiz(this,false,'exp-s3-1','s3')"><span class="opt-badge">C</span>行動に対して与えられる報酬</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-1','s3')"><span class="opt-badge">D</span>例に付いている正解（正解データ）</div>
+<div class="quiz-opt" data-wrong="教師とは、データについている正解のことです。" onclick="checkQuiz(this,false,'exp-s3-1','s3')"><span class="opt-badge">D</span>教科書に書かれている、手法の説明</div>
 </div>
-<div class="quiz-exp" id="exp-s3-1"><strong>正解: D</strong><br/>教師あり学習＝正解データつきの例を大量に見せて学ばせる。教師なし学習＝正解データなしで、まとまりを見つけさせる。違いは、正解データがあるかどうかです。例: 失業率（入力）と物価上昇率（正解データ）の組は教師あり、47 都道府県を似た者同士に分けるのは教師なし。</div>
+<div class="quiz-exp" id="exp-s3-1"><strong>正解: B</strong><br/>教師あり学習＝正解データつきの例を大量に見せて学ばせる。教師なし学習＝正解データなしで、まとまりを見つけさせる。違いは、正解データがあるかどうかです。例: 失業率（入力）と物価上昇率（正解データ）の組は教師あり、47 都道府県を似た者同士に分けるのは教師なし。</div>
 </div>
 
 <div class="quiz-card" id="qc-s3-2">
 <div class="quiz-q"><span class="quiz-qnum">Q2</span>分類とクラスタリングは、どちらもグループに分けているように見えます。何が違いますか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="数値（連続値）を当てるのは回帰です。分類はカテゴリを当てます。" onclick="checkQuiz(this,false,'exp-s3-2','s3')"><span class="opt-badge">A</span>数値を当てるのが分類、カテゴリを当てるのがクラスタリング</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-2','s3')"><span class="opt-badge">B</span>正解データがあるのが分類、ないのがクラスタリング</div>
+<div class="quiz-opt" data-wrong="逆です。分類は教師あり、クラスタリングは教師なしです。" onclick="checkQuiz(this,false,'exp-s3-2','s3')"><span class="opt-badge">A</span>分類は教師なし、クラスタリングは教師あり</div>
+<div class="quiz-opt" data-wrong="数値（連続値）を当てるのは回帰です。分類はカテゴリを当てます。" onclick="checkQuiz(this,false,'exp-s3-2','s3')"><span class="opt-badge">B</span>数値を当てるのが分類、カテゴリを当てるのがクラスタリング</div>
 <div class="quiz-opt" data-wrong="見た目は似ていますが、正解データを使うかが違います（Q&amp;A の Q1）。" onclick="checkQuiz(this,false,'exp-s3-2','s3')"><span class="opt-badge">C</span>違いは無く、同じ型の別の呼び方</div>
-<div class="quiz-opt" data-wrong="逆です。分類は教師あり、クラスタリングは教師なしです。" onclick="checkQuiz(this,false,'exp-s3-2','s3')"><span class="opt-badge">D</span>分類は教師なし、クラスタリングは教師あり</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-2','s3')"><span class="opt-badge">D</span>正解データがあるのが分類、ないのがクラスタリング</div>
 </div>
-<div class="quiz-exp" id="exp-s3-2"><strong>正解: B</strong><br/>例: 「来期は景気後退か否か」は正解データ（過去の後退の記録）があるので分類。「47 都道府県を似た者同士に分ける」は正解データが無いのでクラスタリングです。見た目は似ていても、正解データを使うかが違います。</div>
+<div class="quiz-exp" id="exp-s3-2"><strong>正解: D</strong><br/>例: 「来期は景気後退か否か」は正解データ（過去の後退の記録）があるので分類。「47 都道府県を似た者同士に分ける」は正解データが無いのでクラスタリングです。見た目は似ていても、正解データを使うかが違います。</div>
 </div>
 
 <div class="quiz-card" id="qc-s3-3">
 <div class="quiz-q"><span class="quiz-qnum">Q3</span>「来週の宿題の提出率（%）を予測する」と「ある学生が宿題を提出するか否かを予測する」。型の組み合わせとして正しいものはどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="逆です。パーセントは間の数も取れる連続値なので回帰、する／しないはカテゴリなので分類です。" onclick="checkQuiz(this,false,'exp-s3-3','s3')"><span class="opt-badge">A</span>提出率は分類、提出するか否かは回帰</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-3','s3')"><span class="opt-badge">A</span>提出率は回帰、提出するか否かは分類</div>
 <div class="quiz-opt" data-wrong="提出するか否かは「する／しない」の 2 つのどちらかなので、カテゴリを当てる分類です。" onclick="checkQuiz(this,false,'exp-s3-3','s3')"><span class="opt-badge">B</span>どちらも回帰（どちらも数で当てるから）</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-3','s3')"><span class="opt-badge">C</span>提出率は回帰、提出するか否かは分類</div>
+<div class="quiz-opt" data-wrong="逆です。パーセントは間の数も取れる連続値なので回帰、する／しないはカテゴリなので分類です。" onclick="checkQuiz(this,false,'exp-s3-3','s3')"><span class="opt-badge">C</span>提出率は分類、提出するか否かは回帰</div>
 <div class="quiz-opt" data-wrong="過去の提出記録が正解データになるので、どちらも教師ありです。クラスタリング（正解データなし）ではありません。" onclick="checkQuiz(this,false,'exp-s3-3','s3')"><span class="opt-badge">D</span>どちらもクラスタリング（学生をグループに分けるから）</div>
 </div>
-<div class="quiz-exp" id="exp-s3-3"><strong>正解: C</strong><br/>見るのは、当てるものが数か区分か、そして正解データの有無。パーセントは間の数も取れる連続値なので回帰、する／しないの 2 つのどちらかはカテゴリなので分類。どちらも過去の提出記録が正解データになるので教師ありです。同じ「提出」の話でも、問い方が型を決めました。</div>
+<div class="quiz-exp" id="exp-s3-3"><strong>正解: A</strong><br/>見るのは、当てるものが数か区分か、そして正解データの有無。パーセントは間の数も取れる連続値なので回帰、する／しないの 2 つのどちらかはカテゴリなので分類。どちらも過去の提出記録が正解データになるので教師ありです。同じ「提出」の話でも、問い方が型を決めました。</div>
 </div>
 
 <div class="quiz-card" id="qc-s3-4">
-<div class="quiz-q"><span class="quiz-qnum">Q4</span>景気後退した年を 1、しなかった年を 0 と書いたデータで、来期が 1 か 0 かを当てます。型はどれですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q4</span>「分類」と「教師あり」の関係として、正しいものはどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-4','s3')"><span class="opt-badge">A</span>分類。0 と 1 は区分に付けた印で、大小に意味がない</div>
-<div class="quiz-opt" data-wrong="数値の形をしていても、0 と 1 は「後退する／しない」に付けた印です。数値を扱えば回帰、ではありません（Q&amp;A の Q2）。" onclick="checkQuiz(this,false,'exp-s3-4','s3')"><span class="opt-badge">B</span>回帰。0 と 1 という数値を当てているから</div>
-<div class="quiz-opt" data-wrong="過去の後退の記録という正解データがあるので、教師ありの分類です。" onclick="checkQuiz(this,false,'exp-s3-4','s3')"><span class="opt-badge">C</span>クラスタリング。年をグループに分けているから</div>
-<div class="quiz-opt" data-wrong="行動と報酬は出てきません。強化学習は、この授業では扱いません。" onclick="checkQuiz(this,false,'exp-s3-4','s3')"><span class="opt-badge">D</span>強化学習。行動と報酬で学んでいるから</div>
+<div class="quiz-opt" data-wrong="分類は正解データ（カテゴリ）を使うので、教師ありです。" onclick="checkQuiz(this,false,'exp-s3-4','s3')"><span class="opt-badge">A</span>分類は、教師なし学習の中の一種</div>
+<div class="quiz-opt" data-wrong="よく一緒に出てくるので混ぜやすいのですが、教師ありは学び方の軸、分類はタスクの軸の言葉です。" onclick="checkQuiz(this,false,'exp-s3-4','s3')"><span class="opt-badge">B</span>同じ意味の言葉で、呼び方を言いかえただけ</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-4','s3')"><span class="opt-badge">C</span>別の軸の言葉。教師ありには、回帰も分類もある</div>
+<div class="quiz-opt" data-wrong="教師ありにも回帰と分類の両方があります（例: 成長率の予測は教師ありの回帰）。" onclick="checkQuiz(this,false,'exp-s3-4','s3')"><span class="opt-badge">D</span>教師あり学習でできるのは分類だけで、回帰は入らない</div>
 </div>
-<div class="quiz-exp" id="exp-s3-4"><strong>正解: A</strong><br/>0 と 1 は「後退する／しない」に付けた印で、大小に意味がありません。当てているのはカテゴリなので分類です。型を間違えると、道具の選び方も精度の測り方も全部変わるので、最初に仕分けます。</div>
+<div class="quiz-exp" id="exp-s3-4"><strong>正解: C</strong><br/>地図は 2 本の軸。学び方の軸（教師あり／教師なし／強化）× タスクの軸（回帰／分類／クラスタリング）。学び方を決めても、タスクは決まりません。読む順は、まず正解データがあるか、次に何を当てるか。</div>
 </div>
 
-<div class="quiz-card" id="qc-s3-5">
-<div class="quiz-q"><span class="quiz-qnum">Q5</span>「分類」と「教師あり」の関係として、正しいものはどれですか。</div>
-<div class="quiz-opts">
-<div class="quiz-opt" data-wrong="よく一緒に出てくるので混ぜやすいのですが、教師ありは学び方の軸、分類はタスクの軸の言葉です。" onclick="checkQuiz(this,false,'exp-s3-5','s3')"><span class="opt-badge">A</span>同じ意味の言葉で、呼び方を言いかえただけ</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s3-5','s3')"><span class="opt-badge">B</span>別の軸の言葉。教師ありには、回帰も分類もある</div>
-<div class="quiz-opt" data-wrong="分類は正解データ（カテゴリ）を使うので、教師ありです。" onclick="checkQuiz(this,false,'exp-s3-5','s3')"><span class="opt-badge">C</span>分類は、教師なし学習の中の一種</div>
-<div class="quiz-opt" data-wrong="教師ありにも回帰と分類の両方があります（例: 成長率の予測は教師ありの回帰）。" onclick="checkQuiz(this,false,'exp-s3-5','s3')"><span class="opt-badge">D</span>教師あり学習でできるのは分類だけで、回帰は入らない</div>
-</div>
-<div class="quiz-exp" id="exp-s3-5"><strong>正解: B</strong><br/>地図は 2 本の軸。学び方の軸（教師あり／教師なし／強化）× タスクの軸（回帰／分類／クラスタリング）。学び方を決めても、タスクは決まりません。読む順は、まず正解データがあるか、次に何を当てるか。</div>
-</div>
-
-<div class="step-locked-gate" id="gate-s3">🔒 5問すべて正解すると トピック4 が解放されます。</div>
+<div class="step-locked-gate" id="gate-s3">🔒 4問すべて正解すると トピック4 が解放されます。</div>
 </div>
 </div>
 
@@ -1750,15 +1697,6 @@ body {
 <span class="colab-arrow">→ 視聴</span>
 </a>
 </div>
-<div class="section">
-<div class="sec-label"><span class="s-num">🔗</span>演習で使う</div>
-<a class="colab-card" href="https://colab.research.google.com/" target="_blank">
-<span class="colab-icon">📓</span>
-<div><div class="colab-title">Google Colab</div>
-<div class="colab-desc">演習で使うノート lecture01_ml_map.ipynb を開く（無ければ新規作成して名前を付ける）</div></div>
-<span class="colab-arrow">→ 開く</span>
-</a>
-</div>
 <div class="todo-box" id="todo-s4">
 <div class="todo-title">📝 このトピックでノートブック（.ipynb）に書くこと（lecture01_ml_map.ipynb）</div>
 <ul>
@@ -1769,75 +1707,53 @@ body {
 <div class="todo-note">チェックはこのブラウザにだけ残ります（提出はノートブックで）。</div>
 </div>
 <div class="section">
-<div class="sec-label"><span class="s-num">①</span>確認クイズ（全6問正解でレスポン番号を表示）</div>
+<div class="sec-label"><span class="s-num">①</span>確認クイズ（全4問正解でレスポン番号を表示）</div>
 
 <div class="quiz-card" id="qc-s4-1">
-<div class="quiz-q"><span class="quiz-qnum">Q1</span>scikit-learn の型「3 段」の正しい順番はどれですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q1</span><code>model.fit(X, y)</code> がしていることはどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-1','s4')"><span class="opt-badge">A</span>モデルを作る → fit → predict</div>
-<div class="quiz-opt" data-wrong="学ぶ前に答えは出せません。fit で学んでから predict します（Q&amp;A の Q3）。" onclick="checkQuiz(this,false,'exp-s4-1','s4')"><span class="opt-badge">B</span>モデルを作る → predict → fit</div>
-<div class="quiz-opt" data-wrong="fit するには、先に当てはめる形（モデル）が要ります。1 行目の &lt;code&gt;model = LinearRegression()&lt;/code&gt; が作る段です。" onclick="checkQuiz(this,false,'exp-s4-1','s4')"><span class="opt-badge">C</span>fit → モデルを作る → predict</div>
-<div class="quiz-opt" data-wrong="順番が逆です。作る → fit → predict の順でした。" onclick="checkQuiz(this,false,'exp-s4-1','s4')"><span class="opt-badge">D</span>predict → fit → モデルを作る</div>
+<div class="quiz-opt" data-wrong="並べ替えるのは &lt;code&gt;reshape(-1, 1)&lt;/code&gt; です。" onclick="checkQuiz(this,false,'exp-s4-1','s4')"><span class="opt-badge">A</span>失業率のリストを、6 行 1 列の表に並べ替える</div>
+<div class="quiz-opt" data-wrong="それは predict の役目です。fit は、その前に直線を選ぶ段です。" onclick="checkQuiz(this,false,'exp-s4-1','s4')"><span class="opt-badge">B</span>未知の失業率に対する、物価上昇率の答えを出す</div>
+<div class="quiz-opt" data-wrong="道具を呼び出すのは、最初のセルの import の 2 行です。" onclick="checkQuiz(this,false,'exp-s4-1','s4')"><span class="opt-badge">C</span>numpy や scikit-learn の道具を、ノートに呼び出す</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-1','s4')"><span class="opt-badge">D</span>手元の 6 点に最もよく合う直線を選ぶ</div>
 </div>
-<div class="quiz-exp" id="exp-s4-1"><strong>正解: A</strong><br/>① モデルを作る（<code>model = LinearRegression()</code>）→ ② fit（<code>model.fit(X, y)</code>）→ ③ predict（<code>model.predict([[4.0]])</code>）。学ぶ前に答えは出せません。この 3 段は、秋のあいだどの手法でも同じ形で出てきます。</div>
+<div class="quiz-exp" id="exp-s4-1"><strong>正解: D</strong><br/>モデル＝データに当てはめる「形」（今日は直線）。fit＝手元のデータに最もよく合う形を選ぶこと。これが「学習」です。predict＝未知の入力に対する答えを出すこと。「最もよく合う」をどう測るかは、この先で扱います。</div>
 </div>
 
 <div class="quiz-card" id="qc-s4-2">
-<div class="quiz-q"><span class="quiz-qnum">Q2</span><code>model.fit(X, y)</code> がしていることはどれですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q2</span><code>model.predict([[4.0]])</code> のカッコが二重になっているのはなぜですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="道具を呼び出すのは、最初のセルの import の 2 行です。" onclick="checkQuiz(this,false,'exp-s4-2','s4')"><span class="opt-badge">A</span>numpy や scikit-learn の道具を、ノートに呼び出す</div>
-<div class="quiz-opt" data-wrong="それは predict の役目です。fit は、その前に直線を選ぶ段です。" onclick="checkQuiz(this,false,'exp-s4-2','s4')"><span class="opt-badge">B</span>未知の失業率に対する、物価上昇率の答えを出す</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-2','s4')"><span class="opt-badge">C</span>手元の 6 点に最もよく合う直線を選ぶ</div>
-<div class="quiz-opt" data-wrong="並べ替えるのは &lt;code&gt;reshape(-1, 1)&lt;/code&gt; です。" onclick="checkQuiz(this,false,'exp-s4-2','s4')"><span class="opt-badge">D</span>失業率のリストを、6 行 1 列の表に並べ替える</div>
+<div class="quiz-opt" data-wrong="カッコが 1 つだと &lt;code&gt;ValueError: Expected 2D array&lt;/code&gt; というエラーになります（Q&amp;A の Q2）。" onclick="checkQuiz(this,false,'exp-s4-2','s4')"><span class="opt-badge">A</span>見た目をそろえるためで、<code>[4.0]</code> と書いても同じ結果になる</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-2','s4')"><span class="opt-badge">B</span>新しい失業率 1 つを、1 行 1 列の表として渡すため</div>
+<div class="quiz-opt" data-wrong="内側の &lt;code&gt;[ ]&lt;/code&gt; 1 つが表の 1 行です。&lt;code&gt;[[4.0]]&lt;/code&gt; は 1 行 1 列で、出てくる予測も 1 つです。" onclick="checkQuiz(this,false,'exp-s4-2','s4')"><span class="opt-badge">C</span>4.0 を 2 回、予測させるため</div>
+<div class="quiz-opt" data-wrong="整数か小数かは関係ありません。表の形で渡すための二重カッコです。" onclick="checkQuiz(this,false,'exp-s4-2','s4')"><span class="opt-badge">D</span>小数を入れるときの決まりで、整数なら 1 つでよい</div>
 </div>
-<div class="quiz-exp" id="exp-s4-2"><strong>正解: C</strong><br/>モデル＝データに当てはめる「形」（今日は直線）。fit＝手元のデータに最もよく合う形を選ぶこと。これが「学習」です。predict＝未知の入力に対する答えを出すこと。「最もよく合う」をどう測るかは、この先で扱います。</div>
+<div class="quiz-exp" id="exp-s4-2"><strong>正解: B</strong><br/>内側の <code>[ ]</code> 1 つが表の 1 行です。scikit-learn は入力を表で受け取るので、X は <code>reshape(-1, 1)</code> で 6 行 1 列、predict には 1 行 1 列の <code>[[4.0]]</code> を渡します。どちらも表の形で渡します。</div>
 </div>
 
 <div class="quiz-card" id="qc-s4-3">
-<div class="quiz-q"><span class="quiz-qnum">Q3</span><code>X = np.array(unemployment).reshape(-1, 1)</code> の <code>reshape(-1, 1)</code> は何をしていますか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q3</span>失業率を 1 ポイント下げて 4.0% → 3.0% にすると、物価上昇率の予測はどうなりましたか（動画のたしかめ）。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="-1 は掛け算ではありません。行の数を自動で決める、という指定です。数が 6 つなので 6 行になります。" onclick="checkQuiz(this,false,'exp-s4-3','s4')"><span class="opt-badge">A</span>6 つの数を、それぞれ -1 倍して符号を反対にする</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-3','s4')"><span class="opt-badge">B</span>横に並んだ 6 つの数を、6 行 1 列の表に並べ替える</div>
-<div class="quiz-opt" data-wrong="向きが逆です。行が年、列が失業率になるように、縦に 1 列（6 行 1 列）に並べます。" onclick="checkQuiz(this,false,'exp-s4-3','s4')"><span class="opt-badge">C</span>6 つの数を、1 行 6 列の表に並べ替える</div>
-<div class="quiz-opt" data-wrong="並ぶ順番は変えません。形を、横に並んだリストから縦 1 列の表に変えるだけです。" onclick="checkQuiz(this,false,'exp-s4-3','s4')"><span class="opt-badge">D</span>6 つの数を、小さい順に並べ替えて 1 列にする</div>
+<div class="quiz-opt" data-wrong="約 $0.32$% は、4.0% のときの予測そのものです。3.0% では約 $1.32$% になり、上がった分は約 $1.00$ です。" onclick="checkQuiz(this,false,'exp-s4-3','s4')"><span class="opt-badge">A</span>約 $0.32$ 上がる</div>
+<div class="quiz-opt" data-wrong="傾きが $-1.00$ なので、失業率を下げる（左へ動く）と予測は上がります。約 $1.00$ 下がるのは、5.0% に上げたときです。" onclick="checkQuiz(this,false,'exp-s4-3','s4')"><span class="opt-badge">B</span>約 $1.00$ 下がる</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-3','s4')"><span class="opt-badge">C</span>約 $1.00$ 上がる</div>
+<div class="quiz-opt" data-wrong="入れる失業率が変われば、直線の上で読む場所が変わります。予測も約 $0.32$% から約 $1.32$% へ変わります。" onclick="checkQuiz(this,false,'exp-s4-3','s4')"><span class="opt-badge">D</span>変わらない</div>
 </div>
-<div class="quiz-exp" id="exp-s4-3"><strong>正解: B</strong><br/>横に並んだ 6 つの数を、6 行 1 列の表に並べ替えます。-1 は行の数を自動で決める指定で、数が 6 つなので 6 行、うしろの 1 は 1 列です。行は年、列は失業率で、この列が説明変数です。scikit-learn は X を表の形で受け取ります。</div>
+<div class="quiz-exp" id="exp-s4-3"><strong>正解: C</strong><br/>3 つの予測（3.0%・4.0%・5.0%）は、どれも同じ直線の上にあります。傾きが $-1.00$ なので、失業率を 1 ポイント下げると予測は約 $1.00$ 上がって約 $1.32$%、逆に 5.0% に上げると同じだけ下がって約 $-0.68$% です。</div>
 </div>
 
 <div class="quiz-card" id="qc-s4-4">
-<div class="quiz-q"><span class="quiz-qnum">Q4</span><code>model.predict([[4.0]])</code> のカッコが二重になっているのはなぜですか。</div>
+<div class="quiz-q"><span class="quiz-qnum">Q4</span>学習した直線「物価上昇率 $\approx -1.00 \times$ 失業率 $+\ 4.32$」から言えることはどれですか。</div>
 <div class="quiz-opts">
-<div class="quiz-opt" data-wrong="整数か小数かは関係ありません。表の形で渡すための二重カッコです。" onclick="checkQuiz(this,false,'exp-s4-4','s4')"><span class="opt-badge">A</span>小数を入れるときの決まりで、整数なら 1 つでよい</div>
-<div class="quiz-opt" data-wrong="カッコが 1 つだと &lt;code&gt;ValueError: Expected 2D array&lt;/code&gt; というエラーになります（Q&amp;A の Q2）。" onclick="checkQuiz(this,false,'exp-s4-4','s4')"><span class="opt-badge">B</span>見た目をそろえるためで、<code>[4.0]</code> と書いても同じ結果になる</div>
-<div class="quiz-opt" data-wrong="内側の &lt;code&gt;[ ]&lt;/code&gt; 1 つが表の 1 行です。&lt;code&gt;[[4.0]]&lt;/code&gt; は 1 行 1 列で、出てくる予測も 1 つです。" onclick="checkQuiz(this,false,'exp-s4-4','s4')"><span class="opt-badge">C</span>4.0 を 2 回、予測させるため</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-4','s4')"><span class="opt-badge">D</span>新しい失業率 1 つを、1 行 1 列の表として渡すため</div>
+<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-4','s4')"><span class="opt-badge">A</span>失業率が高い年ほど物価上昇率が低い、という関連</div>
+<div class="quiz-opt" data-wrong="そう読みたくなりますが、この 6 点だけでは他の要因を除けません。言えるのは、2 つが一緒に動くという関連までです。" onclick="checkQuiz(this,false,'exp-s4-4','s4')"><span class="opt-badge">B</span>失業率を上げると物価上昇率が下がる、という因果が示された</div>
+<div class="quiz-opt" data-wrong="直線から読んだ傾向です。どの年もそうとは限りません。" onclick="checkQuiz(this,false,'exp-s4-4','s4')"><span class="opt-badge">C</span>どの年も必ず、失業率が 1 ポイント高いと物価上昇率が 1 ポイント低い</div>
+<div class="quiz-opt" data-wrong="縦軸のマイナスは、物価が下がった年という意味です。データの誤りではありません。" onclick="checkQuiz(this,false,'exp-s4-4','s4')"><span class="opt-badge">D</span>縦軸がマイナスの年があるので、データに誤りがある</div>
 </div>
-<div class="quiz-exp" id="exp-s4-4"><strong>正解: D</strong><br/>内側の <code>[ ]</code> 1 つが表の 1 行です。scikit-learn は入力を表で受け取るので、X は <code>reshape(-1, 1)</code> で 6 行 1 列、predict には 1 行 1 列の <code>[[4.0]]</code> を渡します。どちらも表の形で渡します。</div>
+<div class="quiz-exp" id="exp-s4-4"><strong>正解: A</strong><br/>傾き $-1.00$ は、失業率が 1 ポイント高い年は物価上昇率が約 1 ポイント低い、という傾向です。関連＝2 つが一緒に動くこと。因果＝片方がもう片方を変えたと示すこと。この 6 点だけでは他の要因を除けないので、言えるのは関連までです。縦軸のマイナスは、物価が下がった年という意味です。</div>
 </div>
 
-<div class="quiz-card" id="qc-s4-5">
-<div class="quiz-q"><span class="quiz-qnum">Q5</span>失業率を 1 ポイント下げて 4.0% → 3.0% にすると、物価上昇率の予測はどうなりましたか（動画のたしかめ）。</div>
-<div class="quiz-opts">
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-5','s4')"><span class="opt-badge">A</span>約 $1.00$ 上がる</div>
-<div class="quiz-opt" data-wrong="傾きが $-1.00$ なので、失業率を下げる（左へ動く）と予測は上がります。約 $1.00$ 下がるのは、5.0% に上げたときです。" onclick="checkQuiz(this,false,'exp-s4-5','s4')"><span class="opt-badge">B</span>約 $1.00$ 下がる</div>
-<div class="quiz-opt" data-wrong="約 $0.32$% は、4.0% のときの予測そのものです。3.0% では約 $1.32$% になり、上がった分は約 $1.00$ です。" onclick="checkQuiz(this,false,'exp-s4-5','s4')"><span class="opt-badge">C</span>約 $0.32$ 上がる</div>
-<div class="quiz-opt" data-wrong="入れる失業率が変われば、直線の上で読む場所が変わります。予測も約 $0.32$% から約 $1.32$% へ変わります。" onclick="checkQuiz(this,false,'exp-s4-5','s4')"><span class="opt-badge">D</span>変わらない</div>
-</div>
-<div class="quiz-exp" id="exp-s4-5"><strong>正解: A</strong><br/>3 つの予測（3.0%・4.0%・5.0%）は、どれも同じ直線の上にあります。傾きが $-1.00$ なので、失業率を 1 ポイント下げると予測は約 $1.00$ 上がって約 $1.32$%、逆に 5.0% に上げると同じだけ下がって約 $-0.68$% です。</div>
-</div>
-
-<div class="quiz-card" id="qc-s4-6">
-<div class="quiz-q"><span class="quiz-qnum">Q6</span>学習した直線「物価上昇率 $\approx -1.00 \times$ 失業率 $+\ 4.32$」から言えることはどれですか。</div>
-<div class="quiz-opts">
-<div class="quiz-opt" data-wrong="そう読みたくなりますが、この 6 点だけでは他の要因を除けません。言えるのは、2 つが一緒に動くという関連までです。" onclick="checkQuiz(this,false,'exp-s4-6','s4')"><span class="opt-badge">A</span>失業率を上げると物価上昇率が下がる、という因果が示された</div>
-<div class="quiz-opt" onclick="checkQuiz(this,true,'exp-s4-6','s4')"><span class="opt-badge">B</span>失業率が高い年ほど物価上昇率が低い、という関連</div>
-<div class="quiz-opt" data-wrong="直線から読んだ傾向です。どの年もそうとは限りません。" onclick="checkQuiz(this,false,'exp-s4-6','s4')"><span class="opt-badge">C</span>どの年も必ず、失業率が 1 ポイント高いと物価上昇率が 1 ポイント低い</div>
-<div class="quiz-opt" data-wrong="縦軸のマイナスは、物価が下がった年という意味です。データの誤りではありません。" onclick="checkQuiz(this,false,'exp-s4-6','s4')"><span class="opt-badge">D</span>縦軸がマイナスの年があるので、データに誤りがある</div>
-</div>
-<div class="quiz-exp" id="exp-s4-6"><strong>正解: B</strong><br/>傾き $-1.00$ は、失業率が 1 ポイント高い年は物価上昇率が約 1 ポイント低い、という傾向です。関連＝2 つが一緒に動くこと。因果＝片方がもう片方を変えたと示すこと。この 6 点だけでは他の要因を除けないので、言えるのは関連までです。縦軸のマイナスは、物価が下がった年という意味です。</div>
-</div>
-
-<div class="step-locked-gate" id="gate-s4">🔒 6問すべて正解すると<strong>レスポン番号</strong>が表示されます。</div>
+<div class="step-locked-gate" id="gate-s4">🔒 4問すべて正解すると<strong>レスポン番号</strong>が表示されます。</div>
 </div>
 </div>
 
@@ -1845,7 +1761,11 @@ body {
 <div class="section" id="att-section" style="margin-top:32px;display:none;">
 <div class="sec-label"><span class="s-num">🎫</span>レスポン番号</div>
 <div class="explain-box" style="text-align:center;">
-<div style="font-size:14px;color:var(--text-muted);margin-bottom:8px;">全トピッククリア後、ボタンを押すと <strong>10秒間だけ</strong> 表示されます。表示中に manaba のレスポンに入力してください。<strong>表示は1回のみ</strong>。</div>
+<!-- 案内は 2 行に分ける（PI 2026-10-02「入力してください / ※表示は１回のみ みたいにして、改行した方がいいな」）。
+     1 行目の 2 文は inline-block で包み、幅が足りないときは文の切れ目で折れるようにする。
+     1 文が幅に入らないとき（スマホ）は keep-all で、読点・空白のところでだけ折る（「表示されま / す。」を出さない）。
+     「manaba の」は &nbsp; でつなぐ（390 幅で「表示中に manaba / のレスポンに…」と「の」が行頭に来ていた） -->
+<div class="att-note" style="font-size:14px;color:var(--text-muted);margin-bottom:8px;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere;"><span style="display:inline-block;">全トピッククリア後、ボタンを押すと <strong>10秒間だけ</strong> 表示されます。</span><span style="display:inline-block;">表示中に manaba&nbsp;のレスポンに入力してください。</span><br><span style="display:inline-block;">※<strong>表示は1回のみ</strong></span></div>
 <!-- font-size は 24px（旧 28px。状態メッセージが 2 行に折り返すため 2026-07-04 に一回り縮小） -->
 <div id="att-state" data-pw="592 384 310" style="font-size:24px;font-weight:700;color:var(--accent);letter-spacing:3px;margin:12px 0;">（未設定）</div>
 <div style="display:flex;gap:12px;justify-content:center;margin-top:12px;">
@@ -1904,7 +1824,7 @@ const TEACHER_MODE = (function(){
 // ════════════════════════════════════════
 // VERSION / STORAGE KEYS
 // ════════════════════════════════════════
-const VER = "V_KEI-DATA2_L01_01";
+const VER = "V_KEI-DATA2_L01_02";
 const CLOSING = "第1回 おつかれさまでした";
 // 教員の表示テストで学生の進捗・出席状態を壊さないよう、教員モードだけ保存領域を分ける。
 const NS = TEACHER_MODE ? 'teacher_' : '';
@@ -2469,7 +2389,15 @@ function showCelebration(stepId) {
       // 控えが無いとき（想定外）だけ、これまでどおり要素から取る。
       const raw = RAW_TOPIC_NAMES[nextBtn.id];
       const name = (raw != null && raw !== '') ? raw : (nameEl ? nameEl.textContent : '');
-      nextName = (numEl ? 'トピック' + numEl.textContent + ' — ' : '') + name;
+      // 「トピックN —」と題を別の塊にして、折れるなら塊の切れ目で折る（2026-10-02 実測: 1280 幅でも
+      // 「トピック2 — 機械学習とは何かを一行で言 / う」と題の途中で折れていた）。題の中は keep-all で、
+      // 空白・句読点のところでだけ折る（それでも入らない長さなら anywhere で折って、はみ出さない）。
+      // グラデーションの文字は塊ごとに付ける（親だけに付けると inline-block の子の文字が抜ける版がある）。
+      const part = 'display:inline-block;word-break:keep-all;overflow-wrap:anywhere;'
+        + 'background:linear-gradient(135deg,var(--accent),var(--accent2,#818cf8));'
+        + '-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;';
+      nextName = (numEl ? '<span style="' + part + '">トピック' + numEl.textContent + ' —</span> ' : '')
+        + '<span style="' + part + '">' + name + '</span>';
     }
   }
 
@@ -2504,10 +2432,7 @@ function showCelebration(stepId) {
       <div style="font-size:52px;animation:celBounce 0.8s ease infinite">🎉</div>
       <div style="font-size:24px;font-weight:800;color:var(--accent);margin:12px 0 4px">全問正解！</div>
       <div style="font-size:14px;color:var(--text-muted);margin-bottom:10px">次のトピックが解放されました</div>
-      <div style="font-size:17px;font-weight:700;
-        background:linear-gradient(135deg,var(--accent),var(--accent2,#818cf8));
-        -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-        background-clip:text;padding:6px 0">${nextName}</div>
+      <div style="font-size:17px;font-weight:700;padding:6px 0">${nextName}</div>
       <div style="margin-top:16px;font-size:11px;color:var(--text-muted);opacity:0.6">タップで閉じる • 3秒後に自動で閉じます</div>`;
   }
 
@@ -2580,10 +2505,10 @@ function launchConfetti() {
 // QUIZ
 // ════════════════════════════════════════
 const stepQuizCount = {
-  's1': { total: 6, correct: 0 },
-  's2': { total: 5, correct: 0 },
-  's3': { total: 5, correct: 0 },
-  's4': { total: 6, correct: 0 },
+  's1': { total: 4, correct: 0 },
+  's2': { total: 4, correct: 0 },
+  's3': { total: 4, correct: 0 },
+  's4': { total: 4, correct: 0 },
 };
 
 function checkQuiz(optEl, isCorrect, expId, stepId) {
@@ -3203,7 +3128,7 @@ function restoreAnsweredState() {
 // 学期途中で既存学生の進捗が消える。画面に出る文言だけ「トピック」に統一した（F10）。
 
 </script>
-<!-- build-stamp format:1 | builder:build_quiz.py/2026-09-08 | base:be099071b71d | content:b15da57fe7d8 | body:81d55a15c008 | built:2026-10-02T12:57:41+09:00
+<!-- build-stamp format:1 | builder:build_quiz.py/2026-09-08 | base:7c5b49581105 | content:8b0398b2d6a9 | body:0fd0971ce4d6 | built:2026-10-02T13:49:21+09:00
      この HTML は生成物です。手で直さないでください（次のビルドで消えます）。
      直すのは lectureNN/_work/quiz_content.py で、`python scripts/build_quiz.py NN` で作り直します。 -->
 </body>
