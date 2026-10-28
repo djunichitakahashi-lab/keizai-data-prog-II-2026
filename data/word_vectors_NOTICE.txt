@@ -1,0 +1,12 @@
+word_vectors.npz — 第 12 回「単語埋め込み」の授業用の抽出ファイル
+
+出どころ: llm-book/bert-base-japanese-v3-marc_ja（revision 7b47edf80477fd9da0ee1bc1908326ac012d624f）
+          https://huggingface.co/llm-book/bert-base-japanese-v3-marc_ja
+ライセンス: Apache License 2.0（https://www.apache.org/licenses/LICENSE-2.0）
+          元のモデルは tohoku-nlp/bert-base-japanese-v3（Apache License 2.0）を llm-book が感情分析用に追加学習したもの。
+
+変更点（Apache License 2.0 の 4(b) による表示）:
+  - モデルのうち、入力の単語埋め込み表（bert.embeddings.word_embeddings.weight・32,768 行 × 768）だけを取り出した
+  - 語のかけら（"##" で始まる 8,778 行）と特別な印（"[" で始まる 16 行）を外し、23,974 語にした
+  - 数の型を float32 から float16 に変えた
+  - 中身: words（語の並び）・vectors（23,974 × 768 の数）・source（出どころの 1 行）。numpy の np.load で読む
